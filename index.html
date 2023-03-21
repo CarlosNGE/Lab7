@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,12 +20,57 @@
 
     <h2>Video Example</h2>
 
-    <video controls>
-        <source src="video/adam.mp4" type="video/webm">
+    <video id="video" class="video" controls>
+        <source  src="video/woodkidconcert.mp4" type="video/webm">
         <source src="video/leverage-a-synergy.webm" type="video/webm">
+        <track
+            label="French"
+            kind="captions"
+            srclang="fr"
+            src="captions/captions.vtt"
+            default/>
+            
         <p> test We are sorry, but your brouser doesn't not apper to play the audio file</p>
     </video>
+
     <p>hi</p>
+
+    <fieldset>
+        <legend>Controls</legend>
+        <input type="button" id="play" value="Play">
+        <input type="button" id="pause" value="Pause">
+        <input type="button" id="stop" value="Stop">
+        <input type="button" id="mute" value="Mute">
+        <input type="button" id="unmute" value="Unmute">
+    </fieldset>
+
+    <script>
+
+        const video = document.querySelector('.video');
+
+        document.getElementById('play').addEventListener('click', (e)=>{
+            video.play();
+        });
+
+        document.getElementById('pause').addEventListener('click', (e)=>{
+            video.pause();
+
+        });
+
+        document.getElementById('stop').addEventListener('click', (e)=>{
+            video.pause();
+            video.currentTime = 0;
+        });
+
+        document.getElementById('mute').addEventListener('click', (e)=>{
+            video.mute = true;
+            
+        });
+
+        
+        console.log(video);
+
+    </script>
 
 </body>
 </html>
