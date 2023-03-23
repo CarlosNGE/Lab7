@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', init);
-
-
+var myCues;
 function init() {
+
 
 const video = document.querySelector('.video');
 
@@ -32,4 +32,8 @@ const video = document.querySelector('.video');
         
         console.log(video);
 
+       
+
     }
+
+    
