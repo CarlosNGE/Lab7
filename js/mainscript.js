@@ -1,4 +1,4 @@
-import { cueTimer } from "./modules/cuepoints";
+import { cueTimer } from "./modules/cuepoints.js";
 
 document.addEventListener("DOMContentLoaded", init)
 var myCues;
@@ -14,13 +14,14 @@ function init() {
     // setup the cuepoint timer
     cueTimer.setup("vid", myCues);
 
-    // create shortcut variables
-    const showHide = document.getElementById("show-hide");
+    
 }
 
 
 
 function func1() {
-    document.querySelector(".show");
-       
+    let display = document.querySelector(".show");
+    display.classList.add(".show");
+
+     console.log(display);
 }

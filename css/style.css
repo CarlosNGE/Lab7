@@ -9,17 +9,3 @@
 .hide{
     display: none;
 }
-
-.pop {
-	position:absolute;
-	top:0;
-	left:0;
-	background:rgba(99, 77, 55, .5);
-	color:#fff;
-	border:3px solid red;
-	padding:15px;
-	font-weight:bold;
-	z-index:3;
-  opacity: 1;
-  transition: all .1s;
-}
