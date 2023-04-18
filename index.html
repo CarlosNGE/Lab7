@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <script src="js/video_helpers.js" defer></script>
-    <script src="js/modules/cuepoints.js"></script>
+    <script type="module" src="js/modules/cuepoints.js"></script>
     <script type="module" src="js/mainscript.js"></script>
 </head>
 <body>
@@ -18,6 +18,8 @@
    
 
     <h2>Video Example</h2>
+
+    <section class="info">
 
     <video id="video" class="video" controls>
         <source  src="video/woodkidconcert.mp4" type="video/webm">
@@ -29,24 +31,28 @@
         <p> test We are sorry, but your brouser doesn't not apper to play the audio file</p>
     </video>
 
-    <p>hi</p>
+  
 
-    
+   
 
-    <fieldset>
-        <legend>Controls</legend>
-        <input type="button" id="play" value="Play">
-        <input type="button" id="pause" value="Pause">
-        <input type="button" id="stop" value="Stop">
-        <input type="button" id="mute" value="Mute">
-        <input type="button" id="unmute" value="Unmute">
-    </fieldset>
+   
 
     <div class="show hide">
         <h2>WOODKID</h2>
 		<p>Yoann Lemoine</p>
         <img src="images/woodkid.jpg">
 	</div>
+
+</section>
+
+<fieldset>
+    <legend>Controls</legend>
+    <input type="button" id="play" value="Play">
+    <input type="button" id="pause" value="Pause">
+    <input type="button" id="stop" value="Stop">
+    <input type="button" id="mute" value="Mute">
+    <input type="button" id="unmute" value="Unmute">
+</fieldset>
 
     
 

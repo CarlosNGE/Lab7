@@ -38,7 +38,7 @@ const CueTimer = () => {
 
 	const init = function(vidId, cuesArray) {
 		//add the event listener to the video element
-		document.getElementById(vidId).addEventListener('timeupdate', (e) => 
+		vidId.addEventListener('timeupdate', (e) => 
 		{
 			const video = e.target || window.srcElement;
 			let now = Math.floor(video.currentTime);

@@ -9,3 +9,8 @@
 .hide{
     display: none;
 }
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
